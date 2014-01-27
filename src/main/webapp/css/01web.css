@@ -255,7 +255,8 @@ body {
 	font-size:1.545em;
 	padding-bottom:1em;
 }
-.bodywrapper h2.pagetitle {
+.bodywrapper h2.pagetitle,
+.bodywrapper h1.pagetitle{
 	font-size:1.364em;
 	padding-bottom:1em;
 }
