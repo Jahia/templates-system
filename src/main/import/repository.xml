@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
     <modules jcr:primaryType="jnt:modules">
-        <templates-system j:dependencies="contentRetrieval default default-skins facets grid profile serverSettings skins tabularList tags"
+        <templates-system j:dependencies="contentRetrieval default default-skins facets grid module-manager profile serverSettings skins tabularList tags"
                           j:installedModules="Jahia System Templates"
                         j:modulePriority="0"
                           j:moduleType="templatesSet"
@@ -184,24 +184,6 @@
                         </pagecontent>
                     </viewContent>
                 </baseempty>
-                <moduletemplate j:applyOn="jnt:module"
-                                j:defaultTemplate="true"
-                                j:hiddenTemplate="false"
-                                j:view="serverSettings"
-                                jcr:primaryType="jnt:contentTemplate">
-                    <j:translation_en jcr:language="en"
-                                      jcr:mixinTypes="mix:title"
-                                      jcr:primaryType="jnt:translation"
-                                      jcr:title="moduleTemplate"/>
-                    <pagecontent jcr:primaryType="jnt:contentList">
-                        <manage-modules jcr:primaryType="jnt:serverSettingsManageModules">
-                            <j:translation_en jcr:language="en"
-                                              jcr:mixinTypes="mix:title"
-                                              jcr:primaryType="jnt:translation"
-                                              jcr:title="manage-modules"/>
-                        </manage-modules>
-                    </pagecontent>
-                </moduletemplate>
             </templates>
 
             <categories jcr:primaryType="jnt:category" jcr:title="Categories"/>

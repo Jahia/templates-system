@@ -49,10 +49,10 @@
     <parent>
         <groupId>org.jahia.modules</groupId>
         <artifactId>jahia-modules</artifactId>
-        <version>7.1.0.0</version>
+        <version>7.2.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>templates-system</artifactId>
-	<version>7.1.2-SNAPSHOT</version>
+	<version>8.0.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <name>Jahia System Templates</name>
     <description>This is the custom module (templates-system) for running on a Jahia server.</description>
@@ -64,7 +64,7 @@
   </scm>
 
     <properties>
-        <jahia-depends>contentRetrieval,default,default-skins,facets,grid,profile,serverSettings,skins,tabularList,tags</jahia-depends>
+        <jahia-depends>contentRetrieval,default,default-skins,facets,grid,module-manager,profile,serverSettings,skins,tabularList,tags</jahia-depends>
         <export-package>org.jahia.modules.tasks.rules</export-package>
         <jahia-module-type>templatesSet</jahia-module-type>
         <jahia-deploy-on-site>system</jahia-deploy-on-site>
