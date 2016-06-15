@@ -184,6 +184,24 @@
                         </pagecontent>
                     </viewContent>
                 </baseempty>
+                <moduletemplate j:applyOn="jnt:module"
+                                j:defaultTemplate="true"
+                                j:hiddenTemplate="false"
+                                j:view="serverSettings"
+                                jcr:primaryType="jnt:contentTemplate">
+                    <j:translation_en jcr:language="en"
+                                      jcr:mixinTypes="mix:title"
+                                      jcr:primaryType="jnt:translation"
+                                      jcr:title="moduleTemplate"/>
+                    <pagecontent jcr:primaryType="jnt:contentList">
+                        <manage-modules jcr:primaryType="jnt:serverSettingsManageModules">
+                            <j:translation_en jcr:language="en"
+                                              jcr:mixinTypes="mix:title"
+                                              jcr:primaryType="jnt:translation"
+                                              jcr:title="manage-modules"/>
+                        </manage-modules>
+                    </pagecontent>
+                </moduletemplate>
             </templates>
 
             <categories jcr:primaryType="jnt:category" jcr:title="Categories"/>
