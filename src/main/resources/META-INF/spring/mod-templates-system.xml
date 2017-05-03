@@ -21,6 +21,7 @@
     <bean class="org.jahia.modules.system.SystemSiteInitializer" >
         <property name="jcrTemplate" ref="jcrTemplate" />
         <property name="sitesService" ref="JahiaSitesService" />
+        <property name="settingsBean" ref="settingsBean"/>
     </bean>
 
 </beans>
