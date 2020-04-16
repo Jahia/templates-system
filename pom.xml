@@ -49,10 +49,10 @@
     <parent>
         <groupId>org.jahia.modules</groupId>
         <artifactId>jahia-modules</artifactId>
-        <version>7.2.0.0</version>
+        <version>7.5.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>templates-system</artifactId>
-	<version>8.0.2-SNAPSHOT</version>
+	<version>9.0.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <name>Jahia System Templates</name>
     <description>This is the custom module (templates-system) for running on a Jahia server.</description>
@@ -60,8 +60,8 @@
         <connection>scm:git:git@github.com:Jahia/templates-system.git</connection>
         <developerConnection>scm:git:git@github.com:Jahia/templates-system.git</developerConnection>
         <url>scm:git:git@github.com:Jahia/templates-system.git</url>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 
     <properties>
         <jahia-depends>contentRetrieval,default,default-skins,facets,grid,module-manager,profile,serverSettings,skins,tabularList,tags</jahia-depends>
@@ -69,6 +69,8 @@
         <jahia-module-type>templatesSet</jahia-module-type>
         <jahia-deploy-on-site>system</jahia-deploy-on-site>
         <jahia-block-edit-mode>true</jahia-block-edit-mode>
+        <jahia-module-signature>MCwCFHMzgWhjklXvLppRL9cWiCBS5mbZAhQ4MzSO+r0z4VinIQzxpRvPk4mAFA==</jahia-module-signature>
+        <require-capability>osgi.extender;filter:="(osgi.extender=org.jahia.bundles.blueprint.extender.config)"</require-capability>
     </properties>
 
     <repositories>
