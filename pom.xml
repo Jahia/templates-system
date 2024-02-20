@@ -49,7 +49,7 @@
     <parent>
         <groupId>org.jahia.modules</groupId>
         <artifactId>jahia-modules</artifactId>
-        <version>8.0.0.0</version>
+        <version>8.2.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>templates-system</artifactId>
 	<version>9.1.0-SNAPSHOT</version>
@@ -65,11 +65,10 @@
 
     <properties>
         <jahia-depends>contentRetrieval,default,default-skins,facets,grid,module-manager,profile,serverSettings,skins,tabularList,tags</jahia-depends>
-        <export-package>org.jahia.modules.tasks.rules</export-package>
         <jahia-module-type>templatesSet</jahia-module-type>
         <jahia-deploy-on-site>system</jahia-deploy-on-site>
         <jahia-block-edit-mode>true</jahia-block-edit-mode>
-        <jahia-module-signature>MCwCFHMzgWhjklXvLppRL9cWiCBS5mbZAhQ4MzSO+r0z4VinIQzxpRvPk4mAFA==</jahia-module-signature>
+        <jahia-module-signature>MCwCFGGsrU3yyjyreZT+DEOTKmuKZdmNAhQ0FOVR84nRFYKsJLinaGNKGhu2Tw==</jahia-module-signature>
         <require-capability>osgi.extender;filter:="(osgi.extender=org.jahia.bundles.blueprint.extender.config)"</require-capability>
     </properties>
 
