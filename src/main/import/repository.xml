@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
     <modules jcr:primaryType="jnt:modules">
-        <templates-system j:dependencies="contentRetrieval default default-skins facets grid module-manager profile serverSettings skins tabularList tags"
+        <templates-system j:dependencies="contentRetrieval default facets grid module-manager profile serverSettings tabularList tags"
                           j:installedModules="Jahia System Templates"
                         j:modulePriority="0"
                           j:moduleType="templatesSet"
                           j:title="Jahia System Templates"
                           jcr:primaryType="jnt:module">
-                
+
             <portlets jcr:primaryType="jnt:portletFolder"/>
             <files jcr:primaryType="jnt:folder"/>
             <contents jcr:primaryType="jnt:contentFolder">
@@ -125,13 +125,10 @@
                           j:priority="10"
                           jcr:primaryType="jnt:contentTemplate">
                         <pagecontent j:style="blue"
-                                     jcr:mixinTypes="jmix:style"
                                      jcr:primaryType="jnt:contentList">
                             <custom-rows-960gs customColumn="16" divID="content" jcr:primaryType="jnt:customRow">
                                 <custom-rows-960gs-col1 jcr:primaryType="jnt:contentList">
-                                    <public-profile j:skin="skins.box8"
-                                                    j:style="blue"
-                                                    jcr:mixinTypes="jmix:skinnable jmix:style"
+                                    <public-profile j:style="blue"
                                                     jcr:primaryType="jnt:contentList">
                                         <j:translation_en jcr:language="en"
                                                           jcr:mixinTypes="mix:title"
