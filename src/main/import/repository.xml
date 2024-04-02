@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
     <modules jcr:primaryType="jnt:modules">
-        <templates-system j:dependencies="contentRetrieval default facets grid module-manager profile serverSettings tags"
+        <templates-system j:dependencies="contentRetrieval default facets module-manager profile serverSettings tags"
                           j:installedModules="Jahia System Templates"
                         j:modulePriority="0"
                           j:moduleType="templatesSet"
@@ -106,56 +106,7 @@
                                               jcr:title="##resourceBundle(system.content)##"/>
                                 <pagecontent jcr:primaryType="jnt:area"/>
                         </content>
-                        <footer colNames="footer-colContent"
-                                customColumn="16"
-                                divID="footer"
-                                jcr:primaryType="jnt:customRow">
-                            <footer-colContent jcr:primaryType="jnt:contentList">
-                                <copyright jcr:primaryType="jnt:bigText">
-                                    <j:translation_en jcr:language="en"
-                                                      jcr:primaryType="jnt:translation"
-                                                      text="&lt;p style=&#34;text-align: center;&#34;&gt;  &amp;copy; 2002-2020 Jahia Solutions Group SA - ##resourceBundle(org.jahia.copyright)##&lt;/p&gt; "/>
-                                </copyright>
-                            </footer-colContent>
-                        </footer>
                     </pagecontent>
-                    <user j:applyOn="jnt:user"
-                          j:defaultTemplate="true"
-                          j:hiddenTemplate="false"
-                          j:priority="10"
-                          jcr:primaryType="jnt:contentTemplate">
-                        <pagecontent j:style="blue"
-                                     jcr:primaryType="jnt:contentList">
-                            <custom-rows-960gs customColumn="16" divID="content" jcr:primaryType="jnt:customRow">
-                                <custom-rows-960gs-col1 jcr:primaryType="jnt:contentList">
-                                    <public-profile j:style="blue"
-                                                    jcr:primaryType="jnt:contentList">
-                                        <j:translation_en jcr:language="en"
-                                                          jcr:mixinTypes="mix:title"
-                                                          jcr:primaryType="jnt:translation"
-                                                          jcr:title="##resourceBundle(system.publicProfile)##"/>
-                                        <userDetails j:about="true"
-                                                     j:birthDate="true"
-                                                     j:email="true"
-                                                     j:facebookID="true"
-                                                     j:firstName="true"
-                                                     j:function="true"
-                                                     j:gender="true"
-                                                     j:lastName="true"
-                                                     j:linkedinID="true"
-                                                     j:organization="true"
-                                                     j:picture="true"
-                                                     j:skypeID="true"
-                                                     j:title="true"
-                                                     j:twitterID="true"
-                                                     j:view="default"
-                                                     jcr:mixinTypes="jmix:renderable"
-                                                     jcr:primaryType="jnt:userDetails"/>
-                                    </public-profile>
-                                </custom-rows-960gs-col1>
-                            </custom-rows-960gs>
-                        </pagecontent>
-                    </user>
                 </base>
                 <baseempty j:hiddenTemplate="false"
                            j:view="system.empty"
