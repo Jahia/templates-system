@@ -64,7 +64,7 @@
     </scm>
 
     <properties>
-        <jahia-depends>contentRetrieval,default,default-skins,facets,grid,module-manager,profile,serverSettings,skins,tabularList,tags</jahia-depends>
+        <jahia-depends>contentRetrieval,default,facets,grid,module-manager,profile,serverSettings,tabularList,tags</jahia-depends>
         <jahia-module-type>templatesSet</jahia-module-type>
         <jahia-deploy-on-site>system</jahia-deploy-on-site>
         <jahia-block-edit-mode>true</jahia-block-edit-mode>
