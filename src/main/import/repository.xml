@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
     <modules jcr:primaryType="jnt:modules">
-        <templates-system j:dependencies="contentRetrieval default facets grid module-manager profile serverSettings tabularList tags"
+        <templates-system j:dependencies="contentRetrieval default facets grid module-manager profile serverSettings tags"
                           j:installedModules="Jahia System Templates"
                         j:modulePriority="0"
                           j:moduleType="templatesSet"

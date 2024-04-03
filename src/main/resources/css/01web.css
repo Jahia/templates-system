@@ -9,7 +9,7 @@ img,body,html{border:0;}
 #Shortcutsadmin a:link,
 #Shortcutsadmin a:visited
 {
-	display:block; 
+	display:block;
 	padding:5px;
 	border-bottom:1px solid #eaeaea;
 	font-weight:bold;
@@ -845,83 +845,4 @@ body {
 }
  .divReturnLink{
 	margin:0.5em 0;
-}
-/******************************************************************************
-* Mod tabular List
-******************************************************************************/
- #tabstabularList{
-	background-color:#FFF;
-	overflow:hidden;
-	padding:0.2em;
-	border-top:none;
-	-webkit-border-radius:3px;
-	-moz-border-radius:3px;
-	border-radius:3px;
-	margin-bottom:1em;
-	border:1px solid #f5f5f5;
-}
-
- ul.idTabs {
-	background-image:none;
-	-webkit-border-radius:3px;
-	-moz-border-radius:3px;
-	border-radius:3px;
-	margin-bottom:1em;
-	border:none;
-	margin-bottom:0;
-	padding:0.2em;
-	padding-bottom:0;
-	background-color:#DFEFFC;
-}
- .tabContainer {
-	background-color:#FFF;
-	overflow:hidden;
-	padding:20px;
-	border-top:none;
-	-webkit-border-radius:3px;
-	-moz-border-radius:3px;
-	border-radius:3px;
-	margin-bottom:1em;
-}
- .idTabs li a {
-	background:none;
-	display:inline;
-	float:left;
-	height:auto;
-	line-height:2em;
-	padding-left:1px;
-	text-decoration:none;
-	margin-right:2px;
-	font-weight:bold;
-
-}
- .idTabs li a.selected,
- .idTabs li a:hover,
- .idTabs li a.selected {
-	text-decoration:none;
-	color: #0099FF;
-}
-
-
- .idTabs li a span {
-	background:none;
-	color:#666;
-	cursor:pointer;
-	display:inline;
-	float:left;
-	height:auto;
-	line-height:3em;
-	padding:0 10px;
-	text-decoration:none;
-}
- .idTabs li a.selected span,
- .idTabs li a:hover span,
- .idTabs li a.idTabs span {
-	text-decoration:none;
-	background-color:#FFF;
-	-moz-border-radius:  3px 3px 0 0 ;
-	-webkit-border-radius: 3px 3px 0 0 ;
-	border-radius: 3px 3px 0 0 ;
-	color: #0099FF;
-
 }
