@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html;charset=UTF-8" 
+<%@ page language="java" contentType="text/html;charset=UTF-8"
 %><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <%@ taglib prefix="template" uri="http://www.jahia.org/tags/templateLib" %>
@@ -33,7 +33,5 @@
 </html>
 
 <!--ressources-->
-<template:addResources type="css" resources="960-fluid.css,01web.css,navigation.css,navigationN2-1.css" />
-<template:addResources><!--[if IE 6]><link rel="stylesheet" type="text/css" href="<c:url value='${url.currentModule}/css/ie6.css'/>" media="screen" /><![endif]--></template:addResources>
-<template:addResources><!--[if IE 7]><link rel="stylesheet" type="text/css" href="<c:url value='${url.currentModule}/css/ie.css'/>" media="screen" /><![endif]--></template:addResources>
+<template:addResources type="css" resources="01web.css,navigation.css,navigationN2-1.css" />
 <template:theme/>
