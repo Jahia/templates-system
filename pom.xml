@@ -52,7 +52,7 @@
         <version>8.0.0.0</version>
     </parent>
     <artifactId>templates-system</artifactId>
-	<version>9.1.0</version>
+	<version>9.2.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <name>Jahia System Templates</name>
     <description>This is the custom module (templates-system) for running on a Jahia server.</description>
@@ -60,7 +60,7 @@
         <connection>scm:git:git@github.com:Jahia/templates-system.git</connection>
         <developerConnection>scm:git:git@github.com:Jahia/templates-system.git</developerConnection>
         <url>scm:git:git@github.com:Jahia/templates-system.git</url>
-        <tag>9_1_0</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <properties>
