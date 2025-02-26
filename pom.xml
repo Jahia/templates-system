@@ -49,10 +49,11 @@
     <parent>
         <groupId>org.jahia.modules</groupId>
         <artifactId>jahia-modules</artifactId>
-        <version>8.0.0.0</version>
+        <version>8.2.0.0</version>
+        <relativePath />
     </parent>
     <artifactId>templates-system</artifactId>
-	<version>9.2.0-SNAPSHOT</version>
+	<version>10.0.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <name>Jahia System Templates</name>
     <description>This is the custom module (templates-system) for running on a Jahia server.</description>
@@ -62,15 +63,6 @@
         <url>scm:git:git@github.com:Jahia/templates-system.git</url>
         <tag>HEAD</tag>
     </scm>
-
-    <properties>
-        <jahia-depends>contentRetrieval,default,facets,module-manager,profile,serverSettings,tags</jahia-depends>
-        <jahia-module-type>templatesSet</jahia-module-type>
-        <jahia-deploy-on-site>system</jahia-deploy-on-site>
-        <jahia-block-edit-mode>true</jahia-block-edit-mode>
-        <jahia-module-signature>MCwCFGGsrU3yyjyreZT+DEOTKmuKZdmNAhQ0FOVR84nRFYKsJLinaGNKGhu2Tw==</jahia-module-signature>
-        <require-capability>osgi.extender;filter:="(osgi.extender=org.jahia.bundles.blueprint.extender.config)"</require-capability>
-    </properties>
 
     <repositories>
         <repository>
@@ -159,6 +151,21 @@
                     <outputReactorProjects>true</outputReactorProjects>
                     <outputFormat>json</outputFormat>
                     <outputName>java-bom.cdx</outputName>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Jahia-Depends>contentRetrieval,default,facets,module-manager,profile,serverSettings,tags</Jahia-Depends>
+                        <Jahia-Module-Type>templatesSet</Jahia-Module-Type>
+                        <Jahia-Deploy-On-Site>system</Jahia-Deploy-On-Site>
+                        <Jahia-Block-Edit-Mode>true</Jahia-Block-Edit-Mode>
+                        <Jahia-Signature>MC0CFQCGBzkU+CSEgswAALbuxeknXsO9/gIURkeU25X3RgM9BwBOR9pNSvaqryU=</Jahia-Signature>
+                        <_dsannotations>*</_dsannotations>
+                    </instructions>
                 </configuration>
             </plugin>
         </plugins>
