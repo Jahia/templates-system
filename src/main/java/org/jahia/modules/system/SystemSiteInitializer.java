@@ -45,35 +45,52 @@ package org.jahia.modules.system;
 
 import org.jahia.services.content.JCRCallback;
 import org.jahia.services.content.JCRSessionWrapper;
-import org.jahia.services.content.JCRTemplate;
+import org.jahia.api.content.JCRTemplate;
 import org.jahia.services.content.decorator.JCRSiteNode;
+import org.jahia.services.render.StaticAssetMapping;
 import org.jahia.services.sites.JahiaSitesService;
-import org.jahia.settings.SettingsBean;
-import org.springframework.beans.factory.InitializingBean;
+import org.jahia.api.settings.SettingsBean;
+import org.osgi.service.component.annotations.*;
 
 import javax.jcr.NodeIterator;
 import javax.jcr.RepositoryException;
 import javax.jcr.query.Query;
+import java.util.HashMap;
+import java.util.Map;
 
-public class SystemSiteInitializer implements InitializingBean {
+@Component(service = StaticAssetMapping.class, immediate = true)
+public class SystemSiteInitializer extends StaticAssetMapping {
     private JCRTemplate jcrTemplate;
     private JahiaSitesService sitesService;
     private SettingsBean settingsBean;
 
+    @Activate
+    public void activate() throws Exception {
+        Map<String, String> mappings = new HashMap<>();
+        mappings.put("/modules/templates-system/css/01web.css", "/modules/templates-system/css/templates-system.min.css");
+        mappings.put("/modules/templates-system/css/navigation.css", "/modules/templates-system/css/templates-system.min.css");
+        mappings.put("/modules/templates-system/css/navigationN2-1.css", "/modules/templates-system/css/templates-system.min.css");
+        setMapping(mappings);
 
+        init();
+    }
+
+    @Reference
     public void setJcrTemplate(JCRTemplate jcrTemplate) {
         this.jcrTemplate = jcrTemplate;
     }
 
+    @Reference
     public void setSitesService(JahiaSitesService sitesService) {
         this.sitesService = sitesService;
     }
 
+    @Reference
     public void setSettingsBean(SettingsBean settingsBean) {
         this.settingsBean = settingsBean;
     }
-    @Override
-    public void afterPropertiesSet() throws Exception {
+
+    private void init() throws Exception {
         if (settingsBean.isProcessingServer()) {
             jcrTemplate.doExecuteWithSystemSession(new JCRCallback<Object>() {
                 @Override

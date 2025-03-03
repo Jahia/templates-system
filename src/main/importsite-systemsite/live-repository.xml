@@ -14,7 +14,12 @@
           </j:members>
         </site-privileged>
       </groups>
-      <categories j:originWS="default" j:published="true" jcr:primaryType="jnt:category" jcr:title="Categories" jcr:uuid="abd46620-d19a-4fd2-aa7a-d37d41b5952c" />
+      <categories j:originWS="default" j:published="true" jcr:primaryType="jnt:category" jcr:uuid="abd46620-d19a-4fd2-aa7a-d37d41b5952c">
+        <j:translation_en jcr:language="en"
+                          jcr:mixinTypes="mix:title"
+                          jcr:primaryType="jnt:translation"
+                          jcr:title="Categories"/>
+      </categories>
       <contents j:originWS="default" j:published="true" jcr:primaryType="jnt:contentFolder" jcr:uuid="7747760b-78c6-4870-9773-fe3c28f44a97">
       </contents>
       <j:acl jcr:primaryType="jnt:acl" jcr:uuid="5de8cec2-eb91-4a50-b746-96a7528b1235">
