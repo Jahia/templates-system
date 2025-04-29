@@ -153,7 +153,27 @@
             </templates>
 
             <categories jcr:primaryType="jnt:category">
+                <j:translation_de jcr:language="de"
+                                  jcr:mixinTypes="mix:title"
+                                  jcr:primaryType="jnt:translation"
+                                  jcr:title="Categories"/>
                 <j:translation_en jcr:language="en"
+                                  jcr:mixinTypes="mix:title"
+                                  jcr:primaryType="jnt:translation"
+                                  jcr:title="Categories"/>
+                <j:translation_es jcr:language="es"
+                                  jcr:mixinTypes="mix:title"
+                                  jcr:primaryType="jnt:translation"
+                                  jcr:title="Categories"/>
+                <j:translation_it jcr:language="it"
+                                  jcr:mixinTypes="mix:title"
+                                  jcr:primaryType="jnt:translation"
+                                  jcr:title="Categories"/>
+                <j:translation_fr jcr:language="fr"
+                                  jcr:mixinTypes="mix:title"
+                                  jcr:primaryType="jnt:translation"
+                                  jcr:title="Categories"/>
+                <j:translation_pt jcr:language="pt"
                                   jcr:mixinTypes="mix:title"
                                   jcr:primaryType="jnt:translation"
                                   jcr:title="Categories"/>
